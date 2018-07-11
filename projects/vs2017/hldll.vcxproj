@@ -42,13 +42,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(Configuration)\$(ProjectName)\</OutDir>
+    <OutDir>D:\Steam\SteamApps\common\Half-Life\valve\dlls\</OutDir>
     <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
     <TargetName>hl</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(Configuration)\$(ProjectName)\</OutDir>
+    <OutDir>D:\Steam\SteamApps\common\Half-Life\valve\dlls\</OutDir>
     <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
     <TargetName>hl</TargetName>
   </PropertyGroup>
@@ -69,11 +69,12 @@
       <ModuleDefinitionFile>$(ProjectDir)..\..\dlls\hl.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
-      <Command>call ..\..\filecopy.bat $(TargetPath) ..\..\..\game\mod\dlls\$(TargetName).dll
-call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\dlls\$(TargetName).pdb</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Performing Post-Build Event</Message>
+      <Message>
+      </Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -97,11 +98,12 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\dlls\$(
       <ModuleDefinitionFile>$(ProjectDir)..\..\dlls\hl.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
-      <Command>call ..\..\filecopy.bat $(TargetPath) ..\..\..\game\mod\dlls\$(TargetName).dll
-call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\dlls\$(TargetName).pdb</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Performing Post-Build Event</Message>
+      <Message>
+      </Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
