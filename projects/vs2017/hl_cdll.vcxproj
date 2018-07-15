@@ -42,15 +42,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(Configuration)\$(ProjectName)\</OutDir>
+    <OutDir>D:\Steam\SteamApps\common\Half-Life\valve\dlls\</OutDir>
     <TargetName>client</TargetName>
-    <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
+    <IntDir>hl_cdll\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(Configuration)\$(ProjectName)\</OutDir>
+    <OutDir>D:\Steam\SteamApps\common\Half-Life\valve\dlls\</OutDir>
     <TargetName>client</TargetName>
-    <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
+    <IntDir>hl_cdll\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
