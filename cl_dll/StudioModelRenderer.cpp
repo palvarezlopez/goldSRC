@@ -11,10 +11,10 @@
 #include "dlight.h"
 #include "triangleapi.h"
 
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <memory.h>
-#include <math.h>
+#include <cmath>
 
 #include "studio_util.h"
 #include "r_studioint.h"
@@ -1055,7 +1055,7 @@ void CStudioModelRenderer::StudioMergeBones ( model_t *m_pSubModel )
 	{
 		for (j = 0; j < m_nCachedBones; j++)
 		{
-			if (stricmp(pbones[i].name, m_nCachedBoneNames[j]) == 0)
+			if (_stricmp(pbones[i].name, m_nCachedBoneNames[j]) == 0)
 			{
 				MatrixCopy( m_rgCachedBoneTransform[j], (*m_pbonetransform)[i] );
 				MatrixCopy( m_rgCachedLightTransform[j], (*m_plighttransform)[i] );
@@ -1858,7 +1858,7 @@ int CStudioModelRenderer::StudioDrawPlayer( int flags, entity_state_t *pplayer )
 				{
 					for ( int i = 0 ; i < NUM_WEAPON_PMODELS ; ++i )
 					{
-						if ( !stricmp( pweaponmodel->name, sNewWeaponPModels[i] ) )
+						if ( !_stricmp( pweaponmodel->name, sNewWeaponPModels[i] ) )
 						{
 							gEngfuncs.CL_LoadModel(  sOldWeaponPModels[i] , &modelindex );
 							pweaponmodel = IEngineStudio.GetModelByIndex( modelindex );

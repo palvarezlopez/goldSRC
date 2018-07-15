@@ -20,8 +20,8 @@
 
 #include "hud.h"
 #include "cl_util.h"
-#include <string.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdio>
 #include "parsemsg.h"
 
 DECLARE_MESSAGE( m_Message, HudText )
@@ -496,6 +496,10 @@ int CHudMessage::MsgFunc_HudText( const char *pszName,  int iSize, void *pbuf )
 		m_iFlags |= HUD_ACTIVE;
 
 	return 1;
+}
+
+int CHudMessage::MsgFunc_HudTextPro(const char *pszName, int iSize, void *pbuf) {
+    return 1;
 }
 
 

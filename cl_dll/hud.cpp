@@ -20,8 +20,8 @@
 
 #include "hud.h"
 #include "cl_util.h"
-#include <string.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdio>
 #include "parsemsg.h"
 #include "hud_servers.h"
 #include "vgui_int.h"
@@ -585,7 +585,7 @@ int HUD_IsGame( const char *game )
 	if ( gamedir && gamedir[0] )
 	{
 		COM_FileBase( gamedir, gd );
-		if ( !stricmp( gd, game ) )
+		if ( !_stricmp( gd, game ) )
 			return 1;
 	}
 	return 0;

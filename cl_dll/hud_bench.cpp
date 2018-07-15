@@ -15,8 +15,8 @@
 
 #include "bench.h"
 
-#include <string.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdio>
 #include "parsemsg.h"
 
 #include "con_nprint.h"
@@ -29,7 +29,7 @@
 #include "entity_types.h"
 
 #ifndef M_PI
-#define M_PI		3.14159265358979323846	// matches value in gcc v2 math.h
+#define M_PI		3.14159265358979323846	// matches value in gcc v2 cmath
 #endif
 
 #define NUM_BENCH_OBJ 12
@@ -235,7 +235,7 @@ void Bench_CheckStart( void )
 	if ( !started && !Bench_Active() )
 	{
 		level = gEngfuncs.pfnGetLevelName();
-		if ( level && level[0] && !stricmp( level, "maps/ppdemo.bsp" ) )
+		if ( level && level[0] && !_stricmp( level, "maps/ppdemo.bsp" ) )
 		{
 			started = 1;
 			EngineClientCmd( "ppdemostart\n" );
@@ -622,7 +622,7 @@ float g_fZAdjust = 0.0;
 
 void Bench_CheckEntity( int type, struct cl_entity_s *ent, const char *modelname )
 {
-	if ( Bench_InStage( THIRD_STAGE ) && !stricmp( modelname, "*3" ) )
+	if ( Bench_InStage( THIRD_STAGE ) && !_stricmp( modelname, "*3" ) )
 	{
 		model_t *pmod;
 		vec3_t v;

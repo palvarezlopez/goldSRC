@@ -23,7 +23,7 @@
 
 
 #ifndef M_PI
-#define M_PI		3.14159265358979323846	// matches value in gcc v2 math.h
+#define M_PI		3.14159265358979323846	// matches value in gcc v2 cmath
 #endif
 
 	int CL_IsThirdPerson( void );
@@ -1434,7 +1434,7 @@ int V_FindViewModelByWeaponModel(int weaponindex)
 
 		while ( modelmap[i] != NULL )
 		{
-			if ( !strnicmp( weaponModel->name, modelmap[i][0], len ) )
+			if ( !_strnicmp( weaponModel->name, modelmap[i][0], len ) )
 			{
 				return gEngfuncs.pEventAPI->EV_FindModelIndex( modelmap[i][1] );
 			}

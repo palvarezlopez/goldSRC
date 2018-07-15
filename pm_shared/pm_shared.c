@@ -31,11 +31,11 @@
 	// Spectator Mode
 	int		iJumpSpectator;
 #ifndef DISABLE_JUMP_ORIGIN
-	float	vJumpOrigin[3];
-	float	vJumpAngles[3];
+	float	vJumpOriginPM[3];
+	float	vJumpAnglesPM[3];
 #else
-	extern float	vJumpOrigin[3];
-	extern float	vJumpAngles[3];
+	extern float	vJumpOriginPM[3];
+	extern float	vJumpAnglesPM[3];
 #endif
 #endif
 
@@ -1774,8 +1774,8 @@ void PM_SpectatorMove (void)
 		// jump only in roaming mode
 		if ( iJumpSpectator )
 		{
-			VectorCopy( vJumpOrigin, pmove->origin );
-			VectorCopy( vJumpAngles, pmove->angles );
+			VectorCopy( vJumpOriginPM, pmove->origin );
+			VectorCopy( vJumpAnglesPM, pmove->angles );
 			VectorCopy( vec3_origin, pmove->velocity );
 			iJumpSpectator	= 0;
 			return;

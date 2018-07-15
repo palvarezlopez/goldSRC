@@ -18,7 +18,7 @@ extern "C"
 #include "in_defs.h"
 #include "view.h"
 #include "bench.h"
-#include <string.h>
+#include <cstring>
 #include <ctype.h>
 #include "Exports.h"
 
@@ -214,7 +214,7 @@ struct kbutton_s CL_DLLEXPORT *KB_Find( const char *name )
 	p = g_kbkeys;
 	while ( p )
 	{
-		if ( !stricmp( name, p->name ) )
+		if ( !_stricmp( name, p->name ) )
 			return p->pkey;
 
 		p = p->next;

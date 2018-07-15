@@ -23,9 +23,9 @@
 #define FALSE 0
 #endif
 
-#include <stdio.h> // for safe_sprintf()
+#include <cstdio> // for safe_sprintf()
 #include <stdarg.h>  // "
-#include <string.h> // for strncpy()
+#include <cstring> // for strncpy()
 
 // Macros to hook function calls into the HUD object
 #define HOOK_MESSAGE(x) gEngfuncs.pfnHookUserMsg(#x, __MsgFunc_##x );
