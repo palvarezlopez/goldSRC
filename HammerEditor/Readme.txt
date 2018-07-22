@@ -10,9 +10,9 @@ Valve Software's Half-Life.
 **********************************************************************
 
 
-1)  Installing Hammer 3.4
+1)  Installing Hammer 3.5.2
 
-Run the setup program (hammer_v34.exe) and follow the on-screen instructions.
+Run the setup program (Setup_Hammer_v352.exe) and follow the on-screen instructions.
 
 
 2)  Launching Hammer 

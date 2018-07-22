@@ -1,0 +1,53 @@
+
+Release Date            : 
+Map Title               : 
+Filename                : .bsp
+Author                  : 
+Email Address           : 
+ICQ#			: 
+Home Page               : 
+
+Map Description         : 
+
+
+Other Works by Author   : 
+			  
+			 
+
+Misc Author Info        : 
+
+===================================================================================================
+
+== Play Information ==
+Single Player           : 
+Cooperative             : 
+Deathmatch              : 
+
+== Construction ==
+Base                    : 
+Editor(s) used          : 
+
+== Build Machine ==
+
+
+========================== Comments on Storyline/Inspiration =============================================
+
+
+
+========================== Playtesting & Special Thanks =============================================
+	
+
+
+
+== Installation Info ==
+
+
+==Copyright / Permissions==
+Authors MAY NOT use this level as a base to build additional levels.
+
+This map may be distributed ONLY on a "not for profit" basis using any medium,
+provided this file is included with no changes.
+
+Magazines and other published media may use my level provided they ask for my permission.
+
+This template is available from www.globalassault.com.
