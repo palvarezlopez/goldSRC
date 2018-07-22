@@ -4,7 +4,7 @@
 "sounds" "1"
 "MaxRange" "4096"
 "mapversion" "220"
-"wad" "\steam\steamapps\common\half-life\valve\cached.wad;\steam\steamapps\common\half-life\valve\decals.wad;\steam\steamapps\common\half-life\valve\fonts.wad;\steam\steamapps\common\half-life\valve\gfx.wad;\steam\steamapps\common\half-life\valve\halflife.wad;\steam\steamapps\common\half-life\valve\liquids.wad;\steam\steamapps\common\half-life\valve\spraypaint.wad;\steam\steamapps\common\half-life\valve\xeno.wad;\projects\goldsrc\hammer editor\build\zhlt.wad"
+"wad" "\steam\steamapps\common\half-life\valve\cached.wad;\steam\steamapps\common\half-life\valve\decals.wad;\steam\steamapps\common\half-life\valve\fonts.wad;\steam\steamapps\common\half-life\valve\gfx.wad;\steam\steamapps\common\half-life\valve\halflife.wad;\steam\steamapps\common\half-life\valve\liquids.wad;\steam\steamapps\common\half-life\valve\spraypaint.wad;\steam\steamapps\common\half-life\valve\xeno.wad"
 {
 ( -512 -1024 704 ) ( -512 768 704 ) ( 2112 768 704 ) SKY [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
 ( -512 768 672 ) ( -512 768 704 ) ( -512 -1024 704 ) SKY [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
@@ -125,4 +125,26 @@
 "classname" "weapon_9mmAR"
 "angles" "0 0 0"
 "origin" "448 -384 64"
+}
+{
+"classname" "light"
+"_light" "255 255 128 200"
+"_fade" "1.0"
+"origin" "-64 576 512"
+}
+{
+"classname" "light"
+"_light" "255 255 128 200"
+"_fade" "1.0"
+"origin" "1664 512 72"
+}
+{
+"classname" "light_spot"
+"angles" "0 0 0"
+"_fade" "1.0"
+"_cone" "30"
+"_cone2" "45"
+"pitch" "-90"
+"_light" "255 255 128 200"
+"origin" "640 -128 512"
 }
