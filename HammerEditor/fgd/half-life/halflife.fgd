@@ -698,15 +698,15 @@
 //
 
 
-@PointClass base(Weapon, Targetx) studio("models/w_9mmclip.mdl") = ammo_9mmclip : "9mm Pistol Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_9mmarclip.mdl") = ammo_9mmAR : "9mm Assault Rifle Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_chainammo.mdl") = ammo_9mmbox : "box of 200 9mm shells" []
-@PointClass base(Weapon, Targetx) studio("models/w_argrenade.mdl") = ammo_ARgrenades : "Assault Grenades" []
-@PointClass base(Weapon, Targetx) studio("models/w_shotshell.mdl") = ammo_buckshot : "Shotgun Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_357ammobox.mdl") = ammo_357 : "357 Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_rpgammo.mdl") = ammo_rpgclip : "RPG Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_gaussammo.mdl") = ammo_gaussclip : "Gauss Gun Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_crossbow_clip.mdl") = ammo_crossbow : "Crossbow Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_9mmclip.mdl") = ammo_9mmclip : "9mm Pistol Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_9mmarclip.mdl") = ammo_9mmAR : "9mm Assault Rifle Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_chainammo.mdl") = ammo_9mmbox : "box of 200 9mm shells" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_argrenade.mdl") = ammo_ARgrenades : "Assault Grenades" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_shotshell.mdl") = ammo_buckshot : "Shotgun Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_357ammobox.mdl") = ammo_357 : "357 Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_rpgammo.mdl") = ammo_rpgclip : "RPG Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_gaussammo.mdl") = ammo_gaussclip : "Gauss Gun Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_crossbow_clip.mdl") = ammo_crossbow : "Crossbow Ammo" []
 
 @SolidClass base(Target, ZHLT) = button_target : "Target Button"
 [
@@ -754,7 +754,7 @@
 // cyclers
 //
 
-@PointClass base(Targetname, Angles, Sequence) size(-16 -16 0, 16 16 72) studio() studio("models/cycler.mdl") = cycler : "Monster Cycler" 
+@PointClass base(Targetname, Angles, Sequence) size(-16 -16 0, 16 16 72) studio() studio("fgd/half-life/models/cycler.mdl") = cycler : "Monster Cycler" 
 [
 	model(studio) : "Model"
 	renderfx(choices) :"Render FX" : 0 =
@@ -790,7 +790,7 @@
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
 ]
 
-@PointClass base(Targetname, Angles) sprite() studio("models/cycler_sprite.mdl") = cycler_sprite : "Sprite Cycler" 
+@PointClass base(Targetname, Angles) sprite() studio("fgd/half-life/models/cycler_sprite.mdl") = cycler_sprite : "Sprite Cycler" 
 [
 	model(sprite) : "Sprite"
 	framerate(integer) : "Frames per second" : 10
@@ -827,7 +827,7 @@
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
 ]
 
-@PointClass base(Monster, Sequence) size(-16 -16 -16, 16 16 16) studio("models/cycler_weapon.mdl") = cycler_weapon : "Weapon Cycler" 
+@PointClass base(Monster, Sequence) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/cycler_weapon.mdl") = cycler_weapon : "Weapon Cycler" 
 [
 	model(studio) : "model"
 ]
@@ -853,7 +853,7 @@
 	LightningStart(target_destination) : "Start Entity" 
 	LightningEnd(target_destination) : "Ending Entity" 
 ]
-@PointClass base(Targetname, BeamStartEnd, RenderFxChoices) size(-16 -16 -16, 16 16 16) studio("models/Env_beam.mdl") = env_beam : "Energy Beam Effect"
+@PointClass base(Targetname, BeamStartEnd, RenderFxChoices) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/Env_beam.mdl") = env_beam : "Energy Beam Effect"
 [
 	renderamt(integer) : "Brightness (1 - 255)" : 100
 	rendercolor(color255) : "Beam Color (R G B)" : "0 0 0"
@@ -896,7 +896,7 @@
 	]
 ]
 
-@PointClass base(Targetname, Angles) size(-16 -16 -16, 16 16 16) color(255 0 0) studio("models/Env_blood.mdl") = env_blood : "Blood Effects" 
+@PointClass base(Targetname, Angles) size(-16 -16 -16, 16 16 16) color(255 0 0) studio("fgd/half-life/models/Env_blood.mdl") = env_blood : "Blood Effects" 
 [
 	color(choices) : "Blood Color" : 0 =
 	[
@@ -940,7 +940,7 @@
 
 ]
 
-@PointClass base(Targetname) color(255 255 128) studio("models/env_global.mdl") = env_global : "Global State"
+@PointClass base(Targetname) color(255 255 128) studio("fgd/half-life/models/env_global.mdl") = env_global : "Global State"
 [
 	globalstate(string) : "Global State to Set"
 	triggermode(choices) : "Trigger Mode" : 0 =
@@ -982,7 +982,7 @@
 	rendercolor(color255) : "Fade Color (R G B)" : "0 0 0"
 ]
 
-@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("models/env_funnel.mdl") = env_funnel : "Large Portal Funnel" 
+@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/env_funnel.mdl") = env_funnel : "Large Portal Funnel" 
 [
 	spawnflags(flags) =
 	[
@@ -990,7 +990,7 @@
 	]
 ]
 
-@PointClass base(Targetname, RenderFxChoices, Angles) size(-16 -16 -16, 16 16 16) studio("models/env_laser.mdl") = env_laser : "Laser Beam Effect"
+@PointClass base(Targetname, RenderFxChoices, Angles) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/env_laser.mdl") = env_laser : "Laser Beam Effect"
 [
 	LaserTarget(target_destination) : "Target of Laser" 
 	renderamt(integer) : "Brightness (1 - 255)" : 100
@@ -1030,7 +1030,7 @@
 	]
 ]
 
-@PointClass base(Targetname, Target, RenderFields) size(-16 -16 -16, 16 16 16) color(100 100 0) studio("models/env_render.mdl") = env_render : "Render Controls"
+@PointClass base(Targetname, Target, RenderFields) size(-16 -16 -16, 16 16 16) color(100 100 0) studio("fgd/half-life/models/env_render.mdl") = env_render : "Render Controls"
 [
 	spawnflags(flags) =
 	[
@@ -1589,7 +1589,7 @@
 // game entities (requires Half-Life 1.0.0.9)
 //
 
-@PointClass base(Targetname, Targetx) studio("models/game_counter.mdl") = game_counter : "Fires when it hits limit"
+@PointClass base(Targetname, Targetx) studio("fgd/half-life/models/game_counter.mdl") = game_counter : "Fires when it hits limit"
 [
 	spawnflags(flags) =
 	[
@@ -1601,7 +1601,7 @@
 	health(integer) : "Limit Value" : 10
 ]
 
-@PointClass base(Targetname, Target) studio("models/game_counter_set.mdl") = game_counter_set : "Sets a game_counter"
+@PointClass base(Targetname, Target) studio("fgd/half-life/models/game_counter_set.mdl") = game_counter_set : "Sets a game_counter"
 [
 	spawnflags(flags) =
 	[
@@ -1616,7 +1616,7 @@
 	master(string) : "Master" 
 ]
 
-@PointClass base(Targetname) studio("models/game_player_equip.mdl") = game_player_equip : "Initial player equipment"
+@PointClass base(Targetname) studio("fgd/half-life/models/game_player_equip.mdl") = game_player_equip : "Initial player equipment"
 [
 	spawnflags(flags) =
 	[
@@ -1625,7 +1625,7 @@
 	master(string) : "Team Master"
 ]
 
-@PointClass base(Targetname) studio("models/game_player_hurt.mdl") = game_player_hurt : "Hurts player who fires"
+@PointClass base(Targetname) studio("fgd/half-life/models/game_player_hurt.mdl") = game_player_hurt : "Hurts player who fires"
 [
 	dmg(string) : "Damage To Apply" : "999"
 	spawnflags(flags) =
@@ -1635,7 +1635,7 @@
 	master(string) : "Master" 
 ]
 
-@PointClass base(Targetname) studio("models/game_player_team.mdl") = game_player_team : "Allows player to change teams"
+@PointClass base(Targetname) studio("fgd/half-life/models/game_player_team.mdl") = game_player_team : "Allows player to change teams"
 [
 	spawnflags(flags) =
 	[
@@ -1647,7 +1647,7 @@
 	master(string) : "Master"
 ]
 
-@PointClass base(Targetname) studio("models/game_score.mdl") = game_score : "Award/Deduct Points" 
+@PointClass base(Targetname) studio("fgd/half-life/models/game_score.mdl") = game_score : "Award/Deduct Points" 
 [
 	spawnflags(flags) =
 	[
@@ -1659,7 +1659,7 @@
 	master(string) : "Master" 
 ]
 
-@PointClass base(Targetname, Targetx) studio("models/game_team_master.mdl") = game_team_master : "Team based master/relay"
+@PointClass base(Targetname, Targetx) studio("fgd/half-life/models/game_team_master.mdl") = game_team_master : "Team based master/relay"
 [
 	spawnflags(flags) =
 	[
@@ -1675,7 +1675,7 @@
 	master(string) : "Master" 
 ]
 
-@PointClass base(Targetname, Targetx) studio("models/game_team_set.mdl") = game_team_set : "Sets team of team_master"
+@PointClass base(Targetname, Targetx) studio("fgd/half-life/models/game_team_set.mdl") = game_team_set : "Sets team of team_master"
 [
 	spawnflags(flags) =
 	[
@@ -1716,7 +1716,7 @@
 	master(string) : "Master" 
 ]
 
-@SolidClass base(Targetname) studio("models/game_zone_player.mdl") = game_zone_player : "Player Zone brush"
+@SolidClass base(Targetname) studio("fgd/half-life/models/game_zone_player.mdl") = game_zone_player : "Player Zone brush"
 [
 	intarget(target_destination) : "Target for IN players"
 	outtarget(target_destination) : "Target for OUT players"
@@ -1731,12 +1731,12 @@
 // info entities
 //
 
-@PointClass decal() base(Targetname, Appearflags, Angles) studio("models/infodecal.mdl") = infodecal : "Decal"
+@PointClass decal() base(Targetname, Appearflags, Angles) studio("fgd/half-life/models/infodecal.mdl") = infodecal : "Decal"
 [
 	texture(decal)
 ]
 
-@PointClass base(Targetname) size(-24 -24 0, 24 24 16) color(20 190 60) studio("models/info_bigmomma.mdl")= info_bigmomma : "Big Mamma Node" 
+@PointClass base(Targetname) size(-24 -24 0, 24 24 16) color(20 190 60) studio("fgd/half-life/models/info_bigmomma.mdl")= info_bigmomma : "Big Mamma Node" 
 [
 	spawnflags(Flags) =
 	[
@@ -1757,35 +1757,35 @@
 
 @PointClass base(Targetname) iconsprite("sprites/info_landmark.spr") = info_landmark : "Transition Landmark" []
 
-@PointClass size(-24 -24 -4, 24 24 4) color(255 255 0) studio("models/info_node.mdl") = info_node : "ai node" []
+@PointClass size(-24 -24 -4, 24 24 4) color(255 255 0) studio("fgd/half-life/models/info_node.mdl") = info_node : "ai node" []
 
-@PointClass size(-32 -32 0, 32 32 64) color(255 255 0) studio("models/info_node_air.mdl") = info_node_air : "ai air node" []
+@PointClass size(-32 -32 0, 32 32 64) color(255 255 0) studio("fgd/half-life/models/info_node_air.mdl") = info_node_air : "ai air node" []
 
-@PointClass base(Targetname) studio("models/info_null.mdl") = info_null : "info_null (spotlight target)" []
+@PointClass base(Targetname) studio("fgd/half-life/models/info_null.mdl") = info_null : "info_null (spotlight target)" []
 
-@PointClass base(PlayerClass, Sequence) studio("models/player_coop.mdl") = info_player_coop : "Player cooperative start" []
-@PointClass base(PlayerClass, Sequence) studio("models/player_deathmatch.mdl") = info_player_deathmatch : "Player deathmatch start" 
+@PointClass base(PlayerClass, Sequence) studio("fgd/half-life/models/player_coop.mdl") = info_player_coop : "Player cooperative start" []
+@PointClass base(PlayerClass, Sequence) studio("fgd/half-life/models/player_deathmatch.mdl") = info_player_deathmatch : "Player deathmatch start" 
 [
 	target(target_destination) : "Target"
 	master(string) : "Master"
 ]
-@PointClass base(PlayerClass, Sequence) studio("models/player_solo.mdl") = info_player_start : "Player 1 start" []
+@PointClass base(PlayerClass, Sequence) studio("fgd/half-life/models/player_solo.mdl") = info_player_start : "Player 1 start" []
 
 @PointClass base(Targetname, Angles) size(-4 -4 -4, 4 4 4) color(200 100 50) iconsprite("sprites/info_target.spr") = info_target : "Beam Target" []
 
-@PointClass size(-8 -8 0, 8 8 16) base(PlayerClass, Targetname) studio("models/info_teleport_destination.mdl") = info_teleport_destination : "Teleport destination" []
+@PointClass size(-8 -8 0, 8 8 16) base(PlayerClass, Targetname) studio("fgd/half-life/models/info_teleport_destination.mdl") = info_teleport_destination : "Teleport destination" []
 
 //
 // items
 //
 
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_oxygen.mdl") = item_airtank : "Oxygen tank" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_antidote.mdl") = item_antidote : "Poison antidote" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_battery.mdl") = item_battery : "HEV battery" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_medkit.mdl") = item_healthkit : "Small Health Kit" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_longjump.mdl") = item_longjump : "Longjump Module" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_security.mdl") = item_security : "Security card" []
-@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("models/w_suit.mdl") = item_suit : "HEV Suit" 
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_oxygen.mdl") = item_airtank : "Oxygen tank" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_antidote.mdl") = item_antidote : "Poison antidote" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_battery.mdl") = item_battery : "HEV battery" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_medkit.mdl") = item_healthkit : "Small Health Kit" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_longjump.mdl") = item_longjump : "Longjump Module" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_security.mdl") = item_security : "Security card" []
+@PointClass size(-16 -16 0, 16 16 36) base(Weapon, Targetx) studio("fgd/half-life/models/w_suit.mdl") = item_suit : "HEV Suit" 
 [
 	spawnflags(Flags) =
 	[
@@ -1802,7 +1802,7 @@
 	spawnflags(Flags) = [ 1 : "Initially dark" : 0 ]
 ]
 
-@PointClass base(Targetname, Target, Angles, ZHLT_point) studio("models/light_spot.mdl") = light_spot : "Spotlight" 
+@PointClass base(Targetname, Target, Angles, ZHLT_point) studio("fgd/half-life/models/light_spot.mdl") = light_spot : "Spotlight" 
 [
 	_cone(integer) : "Inner (bright) angle" : 30
 	_cone2(integer) : "Outer (fading) angle" : 45
@@ -1885,8 +1885,8 @@
 // monsters
 //
 
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/controller.mdl") = monster_alien_controller : "Controller"  []
-@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("models/agrunt.mdl") = monster_alien_grunt : "Alien Grunt" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/controller.mdl") = monster_alien_controller : "Controller"  []
+@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("fgd/half-life/models/agrunt.mdl") = monster_alien_grunt : "Alien Grunt" 
 [
 	netname(string) : "Squad Name"
 	spawnflags(Flags) =
@@ -1894,7 +1894,7 @@
 		32 : "SquadLeader" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/islave.mdl") = monster_alien_slave : "Vortigaunt" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/islave.mdl") = monster_alien_slave : "Vortigaunt" 
 [
 	netname(string) : "Squad Name"
 	spawnflags(Flags) =
@@ -1903,7 +1903,7 @@
 		64 : "IgnorePlayer" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-360 -360 -172, 360 360 8) studio("models/apache.mdl") = monster_apache : "Apache" 
+@PointClass base(Monster, Sequence) size(-360 -360 -172, 360 360 8) studio("fgd/half-life/models/apache.mdl") = monster_apache : "Apache" 
 [
 	spawnflags(Flags) = 
 	[
@@ -1911,9 +1911,9 @@
 		64 : "Start Inactive" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("models/baby_headcrab.mdl") = monster_babycrab : "Baby Headcrab" []
-@PointClass base(RenderFields, Sequence) size(-16 -16 -36, 16 16 0) studio("models/barnacle.mdl") = monster_barnacle : "Barnacle Monster" []
-@PointClass base(Monster,TalkMonster, Sequence) size(-16 -16 0, 16 16 72) studio("models/barney.mdl") = monster_barney : "Barney" []
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("fgd/half-life/models/baby_headcrab.mdl") = monster_babycrab : "Baby Headcrab" []
+@PointClass base(RenderFields, Sequence) size(-16 -16 -36, 16 16 0) studio("fgd/half-life/models/barnacle.mdl") = monster_barnacle : "Barnacle Monster" []
+@PointClass base(Monster,TalkMonster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/barney.mdl") = monster_barney : "Barney" []
 @PointClass base(RenderFields,Appearflags, Angles, Sequence) size(-16 -16 0, 16 16 72) = monster_barney_dead : "Dead Barney" 
 [
       pose(Choices) : "Pose" : 0 =
@@ -1923,14 +1923,14 @@
 		2 : "On stomach"
 	]
 ]
-@PointClass base(Monster, Sequence) size(-95 -95 0, 95 95 190) studio("models/big_mom.mdl") = monster_bigmomma : "Big Mamma" 
+@PointClass base(Monster, Sequence) size(-95 -95 0, 95 95 190) studio("fgd/half-life/models/big_mom.mdl") = monster_bigmomma : "Big Mamma" 
 [
 	netname(string) : "First node" : ""
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/floater.mdl") = monster_bloater : "Bloater" []
-@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("models/bullsquid.mdl") = monster_bullchicken : "BullChicken" []
-@PointClass base(Monster, Sequence) size(-3 -3 0, 3 3 3) studio("models/roach.mdl") = monster_cockroach : "Cockroach" []
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 16) studio("models/aflock.mdl") = monster_flyer_flock : "Flock of Flyers" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/floater.mdl") = monster_bloater : "Bloater" []
+@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("fgd/half-life/models/bullsquid.mdl") = monster_bullchicken : "BullChicken" []
+@PointClass base(Monster, Sequence) size(-3 -3 0, 3 3 3) studio("fgd/half-life/models/roach.mdl") = monster_cockroach : "Cockroach" []
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 16) studio("fgd/half-life/models/aflock.mdl") = monster_flyer_flock : "Flock of Flyers" 
 [
 	iFlockSize(Integer) : "Flock Size" : 8
 	flFlockRadius(Integer) : "Flock Radius" : 128
@@ -1940,8 +1940,8 @@
 	model(studio) : "model"
 
 ]
-@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 128) studio("models/garg.mdl") = monster_gargantua : "Gargantua" []
-@PointClass base(Monster, RenderFields, Sequence) size(-16 -16 -36, 16 16 36) studio("models/monster_generic.mdl") = monster_generic : "Generic Script Monster" 
+@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 128) studio("fgd/half-life/models/garg.mdl") = monster_gargantua : "Gargantua" []
+@PointClass base(Monster, RenderFields, Sequence) size(-16 -16 -36, 16 16 36) studio("fgd/half-life/models/monster_generic.mdl") = monster_generic : "Generic Script Monster" 
 [
 	spawnflags(Flags) = 
 	[
@@ -1950,10 +1950,10 @@
 	model(studio) : "model"
 	body(Integer) : "Body" : 0
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/gman.mdl") = monster_gman : "G-Man" []
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/hgrunt.mdl") = monster_grunt_repel : "Human Grunt (Repel)" []
-@PointClass base(Weapon, Targetx, RenderFields, Sequence) studio("models/w_grenade.mdl") = monster_handgrenade : "Live Handgrenade" []
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("models/headcrab.mdl") = monster_headcrab : "Head Crab" []
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/gman.mdl") = monster_gman : "G-Man" []
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/hgrunt.mdl") = monster_grunt_repel : "Human Grunt (Repel)" []
+@PointClass base(Weapon, Targetx, RenderFields, Sequence) studio("fgd/half-life/models/w_grenade.mdl") = monster_handgrenade : "Live Handgrenade" []
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("fgd/half-life/models/headcrab.mdl") = monster_headcrab : "Head Crab" []
 @PointClass base(Appearflags,RenderFields, Angles, Sequence) size(-16 -16 0, 16 16 72) = monster_hevsuit_dead : "Dead HEV Suit" 
 [
       pose(Choices) : "Pose" : 0 =
@@ -1964,7 +1964,7 @@
 		3 : "On Table"
 	]
 ]
-@PointClass base(Appearflags,RenderFields, Angles) size(-16 -16 0, 16 16 72) studio("models/hgrunt.mdl") = monster_hgrunt_dead : "Dead Human Grunt" 
+@PointClass base(Appearflags,RenderFields, Angles) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/hgrunt.mdl") = monster_hgrunt_dead : "Dead Human Grunt" 
 [
       pose(Choices) : "Pose" : 0 =
 	[
@@ -1986,7 +1986,7 @@
 		46 : "deadsitting"
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("models/houndeye.mdl") = monster_houndeye : "Houndeye" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("fgd/half-life/models/houndeye.mdl") = monster_houndeye : "Houndeye" 
 [
 	netname(string) : "Squad Name"
 	spawnflags(Flags) =
@@ -1994,8 +1994,8 @@
 		32 : "SquadLeader" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/hassassin.mdl") = monster_human_assassin : "Human Assassin" []
-@PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/hgrunt.mdl") = monster_human_grunt : "Human Grunt (camo)" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/hassassin.mdl") = monster_human_assassin : "Human Assassin" []
+@PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/hgrunt.mdl") = monster_human_grunt : "Human Grunt (camo)" 
 [
 	spawnflags(Flags) =
 	[
@@ -2096,9 +2096,9 @@
 		81 : "plunger"
 	]
 ]
-@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("models/icky.mdl") = monster_ichthyosaur : "Ichthyosaur" []
-@PointClass base(Monster, Sequence) size(-6 -6 0, 6 6 6) studio("models/leech.mdl") = monster_leech : "Leech" []
-@PointClass base(Monster, Sequence) size(-16 -16 -32, 16 16 32) studio("models/miniturret.mdl") = monster_miniturret : "Mini Auto Turret"
+@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("fgd/half-life/models/icky.mdl") = monster_ichthyosaur : "Ichthyosaur" []
+@PointClass base(Monster, Sequence) size(-6 -6 0, 6 6 6) studio("fgd/half-life/models/leech.mdl") = monster_leech : "Leech" []
+@PointClass base(Monster, Sequence) size(-16 -16 -32, 16 16 32) studio("fgd/half-life/models/miniturret.mdl") = monster_miniturret : "Mini Auto Turret"
 [
 	orientation(Choices) : "Orientation" : 0 =
 	[
@@ -2111,17 +2111,17 @@
 		64 : "Start Inactive" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-192 -192 0, 192 192 384) studio("models/nihilanth.mdl") = monster_nihilanth : "Nihilanth"  []
-@PointClass base(Monster, Sequence) size(-480 -480 -112, 480 480 24) studio("models/osprey.mdl") = monster_osprey : "Osprey"
+@PointClass base(Monster, Sequence) size(-192 -192 0, 192 192 384) studio("fgd/half-life/models/nihilanth.mdl") = monster_nihilanth : "Nihilanth"  []
+@PointClass base(Monster, Sequence) size(-480 -480 -112, 480 480 24) studio("fgd/half-life/models/osprey.mdl") = monster_osprey : "Osprey"
 [
 	spawnflags(Flags) = 
 	[
 		64 : "Start Inactive" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-6 -6 0, 6 6 6) studio("models/bigrat.mdl") = monster_rat : "Rat (no ai)" []
-@PointClass base(Weapon,Targetx,RenderFields, Sequence) studio("models/w_satchel.mdl") = monster_satchelcharge : "Live Satchel Charge" []
-@PointClass base(Monster, TalkMonster) size(-16 -16 0, 16 16 72) studio("models/scientist.mdl") = monster_scientist : "Scared Scientist" 
+@PointClass base(Monster, Sequence) size(-6 -6 0, 6 6 6) studio("fgd/half-life/models/bigrat.mdl") = monster_rat : "Rat (no ai)" []
+@PointClass base(Weapon,Targetx,RenderFields, Sequence) studio("fgd/half-life/models/w_satchel.mdl") = monster_satchelcharge : "Live Satchel Charge" []
+@PointClass base(Monster, TalkMonster) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/scientist.mdl") = monster_scientist : "Scared Scientist" 
 [
       body(Choices) : "Body" : -1 =
 	[
@@ -2263,7 +2263,7 @@
 		127 : "kneel"
 	]
 ]
-@PointClass base(Appearflags,RenderFields, Angles) size(-16 -16 0, 16 16 72) studio("models/scientist.mdl") = monster_scientist_dead : "Dead Scientist" 
+@PointClass base(Appearflags,RenderFields, Angles) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/scientist.mdl") = monster_scientist_dead : "Dead Scientist" 
 [
 	body(Choices) : "Body" : -1 =
 	[
@@ -2293,7 +2293,7 @@
 		42 : "dead_table3"
 	]
 ]
-@PointClass base(Monster) size(-14 -14 22, 14 14 72) studio("models/scientist.mdl") = monster_sitting_scientist : "Sitting Scientist" 
+@PointClass base(Monster) size(-14 -14 22, 14 14 72) studio("fgd/half-life/models/scientist.mdl") = monster_sitting_scientist : "Sitting Scientist" 
 [
 	body(Choices) : "Body" : -1 =
 	[
@@ -2312,7 +2312,7 @@
 		75 : "sitting3"
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/sentry.mdl") = monster_sentry : "Sentry Turret Gun"
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/sentry.mdl") = monster_sentry : "Sentry Turret Gun"
 [
 	spawnflags(Flags) = 
 	[
@@ -2320,8 +2320,8 @@
 		64 : "Start Inactive" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("models/w_squeak.mdl") = monster_snark : "Armed Snark" []
-@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("models/tentacle2.mdl") = monster_tentacle : "Tentacle Arm" 
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 36) studio("fgd/half-life/models/w_squeak.mdl") = monster_snark : "Armed Snark" []
+@PointClass base(Monster, Sequence) size(-32 -32 0, 32 32 64) studio("fgd/half-life/models/tentacle2.mdl") = monster_tentacle : "Tentacle Arm" 
 [
 	sweeparc(integer) : "Sweep Arc" : 130
 	sound(Choices) : "Tap Sound" : -1 =
@@ -2339,7 +2339,7 @@
 		1 : "Instant On" : 1
 	]
 ]
-@PointClass base(Monster, Sequence) size(-32 -32 -32, 32 32 32) studio("models/turret.mdl") = monster_turret : "Auto Turret"
+@PointClass base(Monster, Sequence) size(-32 -32 -32, 32 32 32) studio("fgd/half-life/models/turret.mdl") = monster_turret : "Auto Turret"
 [
 	orientation(Choices) : "Orientation" : 0 =
 	[
@@ -2352,8 +2352,8 @@
 		64 : "Start Inactive" : 0
 	]
 ]
-@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("models/zombie.mdl") = monster_zombie : "Scientist Zombie" []
-@PointClass base(Targetname, Angles) size(-16 -16 -16, 16 16 16) studio("models/monstermaker.mdl")= monstermaker : "Monster Maker"
+@PointClass base(Monster, Sequence) size(-16 -16 0, 16 16 72) studio("fgd/half-life/models/zombie.mdl") = monster_zombie : "Scientist Zombie" []
+@PointClass base(Targetname, Angles) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/monstermaker.mdl")= monstermaker : "Monster Maker"
 [
 	target(string) : "Target On Release" 
 	monstertype(string) : "Monster Type"
@@ -2391,7 +2391,7 @@
 	globalstate(string) : "Global State Master"
 ]
 
-@PointClass base(Targetname, Angles) size(16 16 16) color(247 181 82) studio("models/path_corner.mdl") = path_corner : "Moving platform stop"
+@PointClass base(Targetname, Angles) size(16 16 16) color(247 181 82) studio("fgd/half-life/models/path_corner.mdl") = path_corner : "Moving platform stop"
 [
 	spawnflags(Flags) =
 	[
@@ -2406,7 +2406,7 @@
 	yaw_speed(integer) : "New Train rot. Speed" : 0
 ]
 
-@PointClass base(Targetname, Angles) size(16 16 16) studio("models/path_track.mdl") = path_track : "Train Track Path"
+@PointClass base(Targetname, Angles) size(16 16 16) studio("fgd/half-life/models/path_track.mdl") = path_track : "Train Track Path"
 [
 	spawnflags(Flags) =
 	[
@@ -2426,7 +2426,7 @@
 // player effects
 //
 
-@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("models/player_loadsaved.mdl")= player_loadsaved : "Load Auto-Saved game" 
+@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/player_loadsaved.mdl")= player_loadsaved : "Load Auto-Saved game" 
 [
 	duration(string) : "Fade Duration (seconds)" : "2"
 	holdtime(string) : "Hold Fade (seconds)" : "0"
@@ -2437,7 +2437,7 @@
 	loadtime(string) : "Reload delay" : "0"
 ]
 
-@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("models/player_weaponstrip.mdl") = player_weaponstrip : "Strips player's weapons" []
+@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) studio("fgd/half-life/models/player_weaponstrip.mdl") = player_weaponstrip : "Strips player's weapons" []
 
 @PointClass base(Targetname, Targetx) size(-16 -16 0, 16 16 72) color(255 0 255) iconsprite("sprites/scripted_sentence.spr") = scripted_sentence : "Scripted Sentence"
 [
@@ -2464,7 +2464,7 @@
 	]
 ]
 
-@PointClass base(Targetname, Targetx, Angles) size(-16 -16 0, 16 16 72) color(255 0 255) studio("models/scripted_sequence.mdl") = scripted_sequence : "Scripted Sequence"
+@PointClass base(Targetname, Targetx, Angles) size(-16 -16 0, 16 16 72) color(255 0 255) studio("fgd/half-life/models/scripted_sequence.mdl") = scripted_sequence : "Scripted Sequence"
 [
 	m_iszEntity(string) : "Target Monster"
 	m_iszPlay(string) : "Action Animation" : ""
@@ -2515,7 +2515,7 @@
 	]
 ]
 
-@PointClass base(Targetname) studio("models/target_cdaudio.mdl") = target_cdaudio : "CD Audio Target"
+@PointClass base(Targetname) studio("fgd/half-life/models/target_cdaudio.mdl") = target_cdaudio : "CD Audio Target"
 [
 	health(choices) : "Track #" : -1 =
 	[
@@ -2558,7 +2558,7 @@
 // Triggers
 //
 
-@PointClass base(Targetx) studio("models/trigger_auto.mdl") = trigger_auto : "AutoTrigger"
+@PointClass base(Targetx) studio("fgd/half-life/models/trigger_auto.mdl") = trigger_auto : "AutoTrigger"
 [
 	spawnflags(Flags) =
 	[
@@ -2578,7 +2578,7 @@
 	master(string) : "Master" 
 ]
 
-@PointClass base(Targetx, Targetname, Angles) studio("models/trigger_camera.mdl") = trigger_camera : "Trigger Camera" 
+@PointClass base(Targetx, Targetname, Angles) studio("fgd/half-life/models/trigger_camera.mdl") = trigger_camera : "Trigger Camera" 
 [
 	wait(integer) : "Hold time" : 10
 	moveto(string) : "Path Corner"
@@ -2645,7 +2645,7 @@
 	]
 ]
 
-@PointClass base(Targetx, Targetname) studio("models/trigger_change_target.mdl")= trigger_changetarget : "Trigger Change Target"
+@PointClass base(Targetx, Targetname) studio("fgd/half-life/models/trigger_change_target.mdl")= trigger_changetarget : "Trigger Change Target"
 [
 	m_iszNewTarget(string) : "New Target"
 ]
@@ -2763,14 +2763,14 @@
 // weapons
 //
 
-@PointClass base(Weapon, Targetx) studio("models/w_crowbar.mdl") = weapon_crowbar : "Crowbar" []
-@PointClass base(Weapon, Targetx) studio("models/w_9mmhandgun.mdl") = weapon_9mmhandgun : "9mm Handgun" []
-@PointClass base(Weapon, Targetx) studio("models/w_357.mdl") = weapon_357 : "357 Handgun" []
-@PointClass base(Weapon, Targetx) studio("models/w_9mmar.mdl") = weapon_9mmAR : "9mm Assault Rifle" []
-@PointClass base(Weapon, Targetx) studio("models/w_shotgun.mdl") = weapon_shotgun : "Shotgun" []
-@PointClass base(Weapon, Targetx) studio("models/w_rpg.mdl") = weapon_rpg : "RPG" []
-@PointClass base(Weapon, Targetx) studio("models/w_gauss.mdl") = weapon_gauss : "Gauss Gun" []
-@PointClass base(Weapon, Targetx) studio("models/w_crossbow.mdl") = weapon_crossbow : "Crossbow" 
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_crowbar.mdl") = weapon_crowbar : "Crowbar" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_9mmhandgun.mdl") = weapon_9mmhandgun : "9mm Handgun" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_357.mdl") = weapon_357 : "357 Handgun" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_9mmar.mdl") = weapon_9mmAR : "9mm Assault Rifle" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_shotgun.mdl") = weapon_shotgun : "Shotgun" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_rpg.mdl") = weapon_rpg : "RPG" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_gauss.mdl") = weapon_gauss : "Gauss Gun" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_crossbow.mdl") = weapon_crossbow : "Crossbow" 
 [
 	sequence(choices) : "Placement" : 0 =
 	[
@@ -2778,15 +2778,15 @@
 		1 : "Realistic (tilted)"
 	]
 ]
-@PointClass base(Weapon, Targetx) studio("models/w_egon.mdl") = weapon_egon : "Egon Gun" []
-@PointClass base(Weapon, Targetx) size(-16 -16 -5, 16 16 27) studio("models/w_tripmine.mdl") = weapon_tripmine : "Tripmine Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_satchel.mdl") = weapon_satchel : "Satchel Charge Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_grenade.mdl") = weapon_handgrenade : "Handgrenade Ammo" []
-@PointClass base(Weapon, Targetx) studio("models/w_squeak.mdl") = weapon_snark : "Squeak Grenade" []
-@PointClass base(Weapon, Targetx) studio("models/w_hgun.mdl") = weapon_hornetgun : "Hornet Gun" []
-@PointClass size(-16 -16 0, 16 16 64) color(0 128 0) studio("models/w_chainammo.mdl") =  weaponbox : "Weapon/Ammo Container" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_egon.mdl") = weapon_egon : "Egon Gun" []
+@PointClass base(Weapon, Targetx) size(-16 -16 -5, 16 16 27) studio("fgd/half-life/models/w_tripmine.mdl") = weapon_tripmine : "Tripmine Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_satchel.mdl") = weapon_satchel : "Satchel Charge Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_grenade.mdl") = weapon_handgrenade : "Handgrenade Ammo" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_squeak.mdl") = weapon_snark : "Squeak Grenade" []
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/w_hgun.mdl") = weapon_hornetgun : "Hornet Gun" []
+@PointClass size(-16 -16 0, 16 16 64) color(0 128 0) studio("fgd/half-life/models/w_chainammo.mdl") =  weaponbox : "Weapon/Ammo Container" []
 
-@PointClass base(Weapon, Targetx) studio("models/world_items.mdl") = world_items : "World Items" 
+@PointClass base(Weapon, Targetx) studio("fgd/half-life/models/world_items.mdl") = world_items : "World Items" 
 [
 	type(choices) :"types" : 42 =
 	[
@@ -2801,15 +2801,15 @@
 // Xen
 //
 
-@PointClass base(Target, Targetname, RenderFields, Angles) size(-48 -48 0, 48 48 32 ) studio("models/light.mdl") = xen_plantlight : "Xen Plant Light" []
-@PointClass base(Targetname, RenderFields, Angles) size(-8 -8 0, 8 8 32 ) studio("models/hair.mdl") = xen_hair : "Xen Hair" 
+@PointClass base(Target, Targetname, RenderFields, Angles) size(-48 -48 0, 48 48 32 ) studio("fgd/half-life/models/light.mdl") = xen_plantlight : "Xen Plant Light" []
+@PointClass base(Targetname, RenderFields, Angles) size(-8 -8 0, 8 8 32 ) studio("fgd/half-life/models/hair.mdl") = xen_hair : "Xen Hair" 
 [
 	spawnflags(Flags) = 
 	[
 		1 : "Sync Movement" 	: 0
 	]
 ]
-@PointClass base(Targetname, RenderFields, Angles) size(-24 -24 0, 24 24 188 ) studio("models/tree.mdl") = xen_tree : "Xen Tree" []
-@PointClass base(Targetname, RenderFields, Angles) size(-16 -16 0, 16 16 64 ) studio("models/fungus(small).mdl") = xen_spore_small : "Xen Spore (small)" []
-@PointClass base(Targetname, RenderFields, Angles) size(-40 -40 0, 40 40 120 ) studio("models/fungus.mdl") = xen_spore_medium : "Xen Spore (medium)" []
-@PointClass base(Targetname, RenderFields, Angles) size(-90 -90 0, 90 90 220 ) studio("models/fungus(large).mdl") = xen_spore_large : "Xen Spore (large)" []
+@PointClass base(Targetname, RenderFields, Angles) size(-24 -24 0, 24 24 188 ) studio("fgd/half-life/models/tree.mdl") = xen_tree : "Xen Tree" []
+@PointClass base(Targetname, RenderFields, Angles) size(-16 -16 0, 16 16 64 ) studio("fgd/half-life/models/fungus(small).mdl") = xen_spore_small : "Xen Spore (small)" []
+@PointClass base(Targetname, RenderFields, Angles) size(-40 -40 0, 40 40 120 ) studio("fgd/half-life/models/fungus.mdl") = xen_spore_medium : "Xen Spore (medium)" []
+@PointClass base(Targetname, RenderFields, Angles) size(-90 -90 0, 90 90 220 ) studio("fgd/half-life/models/fungus(large).mdl") = xen_spore_large : "Xen Spore (large)" []

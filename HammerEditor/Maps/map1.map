@@ -2,9 +2,9 @@
 "classname" "worldspawn"
 "classname" "worldspawn"
 "sounds" "1"
-"MaxRange" "4096"
+"MaxRange" "8192"
 "mapversion" "220"
-"wad" "\steam\steamapps\common\half-life\valve\cached.wad;\steam\steamapps\common\half-life\valve\decals.wad;\steam\steamapps\common\half-life\valve\fonts.wad;\steam\steamapps\common\half-life\valve\gfx.wad;\steam\steamapps\common\half-life\valve\halflife.wad;\steam\steamapps\common\half-life\valve\liquids.wad;\steam\steamapps\common\half-life\valve\spraypaint.wad;\steam\steamapps\common\half-life\valve\xeno.wad"
+"wad" "\steam\steamapps\common\half-life\valve\cached.wad;\steam\steamapps\common\half-life\valve\decals.wad;\steam\steamapps\common\half-life\valve\fonts.wad;\steam\steamapps\common\half-life\valve\gfx.wad;\steam\steamapps\common\half-life\valve\halflife.wad;\steam\steamapps\common\half-life\valve\liquids.wad;\steam\steamapps\common\half-life\valve\spraypaint.wad;\steam\steamapps\common\half-life\valve\xeno.wad;\projects\goldsrc\hammereditor\build\zhlt.wad"
 {
 ( -512 -1024 704 ) ( -512 768 704 ) ( 2112 768 704 ) SKY [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
 ( -512 768 672 ) ( -512 768 704 ) ( -512 -1024 704 ) SKY [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
@@ -92,13 +92,6 @@
 "origin" "320 -320 128"
 }
 {
-"classname" "light_environment"
-"angles" "0 0 0"
-"_fade" "1.0"
-"_light" "255 255 128 200"
-"origin" "832 -128 576"
-}
-{
 "classname" "monster_barney"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
@@ -109,6 +102,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "weapons" "1"
+"sequence" "11"
 "origin" "1903 -814 32"
 }
 {
@@ -130,12 +124,14 @@
 "classname" "light"
 "_light" "255 255 128 200"
 "_fade" "1.0"
+"_color" "1.000000 1.000000 1.000000"
 "origin" "-64 576 512"
 }
 {
 "classname" "light"
 "_light" "255 255 128 200"
 "_fade" "1.0"
+"_color" "1.000000 1.000000 1.000000"
 "origin" "1664 512 72"
 }
 {
@@ -147,4 +143,32 @@
 "pitch" "-90"
 "_light" "255 255 128 200"
 "origin" "640 -128 512"
+}
+{
+"classname" "light_environment"
+"angles" "0 0 0"
+"_fade" "1.0"
+"_light" "255 255 128 200"
+"origin" "832 -128 576"
+}
+{
+"classname" "monster_apache"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"sequence" "1"
+"origin" "768 -64 448"
+}
+{
+"classname" "monster_apache"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"sequence" "1"
+"origin" "0 -466 447"
+}
+{
+"classname" "monster_apache"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"sequence" "1"
+"origin" "1535 -466 447"
 }
